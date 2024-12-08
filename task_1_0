@@ -1,0 +1,9 @@
+// Ввести с клавиатуры два целочисленных числа. Вывести на экран сумму этих двух чисел.
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, summa;
+	cin >> a >> b;
+	summa = a + b;
+	cout <<"Summa=" << summa << endl;
+}
