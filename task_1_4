@@ -1,0 +1,16 @@
+// Ввести с клавиатуры любой символ. Если символ цифра, то вывести на экран строку «Number=», а затем сам символ, в противном случае вывести на экран строку «No number»
+#include <iostream>
+using namespace std;
+int main() {
+    char a;
+    int counter = 0;
+    cin.get(a); // scanf("%c", &a);
+    for (int i = 48; i < 58; i++) {
+        if (a == char(i)) {
+            counter ++;
+            break;
+        }
+    }
+    if (counter > 0) cout << "Number=" << a;
+    else cout << "No Number";
+}
