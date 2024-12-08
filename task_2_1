@@ -1,0 +1,13 @@
+//
+#include <iostream>
+
+using namespace std;
+int main() {
+    int n, stepen;
+    cin >> n >> stepen;
+    int n_res = n;
+    for (int i=1; i < stepen; i++) {
+        n_res = n_res * n;
+    }
+    cout << n_res;
+}
