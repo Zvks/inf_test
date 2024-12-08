@@ -1,0 +1,11 @@
+// Ввести с клавиатуры два целочисленных числа. Вывести на экран число, которое больше по значения. Если два числа между собой равны, то вывести нуль.
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b;
+	cin >> a >> b;
+	if (a > b) cout << a << endl;
+	else if (b > a) cout << b << endl;
+	else
+		cout << "0" << endl;
+}
