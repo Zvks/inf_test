@@ -1,0 +1,19 @@
+// Ввести с клавиатуры одно целочисленное число. Если число принадлежит диапазону 0..10, то вывести на экран значение sin(x+1), в противном случае вывести на экран значение cos(x-1)
+#include <iomanip>
+#include <iostream>
+#include <cmath>  
+using namespace std;
+int main() {
+	int x;
+	cin >> x;
+	if (x <= 10 && x >= 0) {
+		if (sin(x + 1) > 0) {
+			cout << '+'<< setprecision(2) << sin(x + 1) << endl;
+        } else cout << setprecision(2) << sin(x + 1) << endl;
+    }
+	else if(x > 10 || x < 0) {
+    	if (cos(x - 1) > 0) {
+			cout << '+' << setprecision(2) << cos(x - 1) << endl;
+    	} else cout << setprecision(2) << cos(x - 1) << endl;
+    }
+}
