@@ -1,1 +1,14 @@
+// Член ряда, рассчитывается по формуле n/(3*n-1). Сумма ряда начинается при n=1. При каком значении n, сумма ряда станет больше 3.
 
+#include <iostream>
+using namespace std;
+int main() {
+    float summ = 0;
+    int n = 1;
+    while (summ <= 3) {
+        summ += n/(3*n-1);
+        n++;
+    }
+    cout << n;
+    return 0;
+}
