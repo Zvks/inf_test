@@ -1,1 +1,11 @@
+// Ввести с экрана 5 вещественных чисел. Вывести на экран суммы соседних чисел.
 
+#include <iostream>
+using namespace std;
+int main() {
+    float num1, num2, num3, num4, num5;
+    cin >>  num1 >> num2 >> num3 >> num4 >> num5;
+    cout.precision(2);
+    cout << num1+num2 << ' ' << num2+num3 << ' ' << num3+num4 << ' ' << num4+num5;
+    return 0;
+}
