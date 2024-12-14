@@ -1,1 +1,21 @@
+// Размер массива А и В равен 5. Значения элементов массива А и В задаются ручным способом.
+// Массив С необходимо заполнить суммами соответствующих элементов массива А и В. Вывести на экран массив С.
 
+#include <iostream>
+using namespace std;
+int main() {
+    int A_arr[5];
+    int B_arr[5];
+    int C_arr[5];
+    for (int i = 0; i < 5; i++) {
+        cin >> A_arr[i];
+    }
+    for (int i = 0; i < 5; i++) {
+        cin >> B_arr[i];
+    }
+    for (int i = 0; i < 5; i++) {
+        C_arr[i] = B_arr[i] + A_arr[i];
+        cout << C_arr[i] << ' ';
+    }
+    return 0;
+}
